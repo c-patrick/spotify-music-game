@@ -47,7 +47,7 @@ SPOTIPY_CLIENT_ID=your_client_id
 SPOTIPY_CLIENT_SECRET=your_client_secret
 ```
 
-Replace the `PLAYLIST_URL` in main.py with a public playlist of your choice.
+Replace the `PLAYLIST_URL` in `main.py` with a public playlist of your choice.
 
 ## Usage
 
