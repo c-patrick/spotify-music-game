@@ -1,0 +1,4 @@
+pillow==11.3.0
+PyMuPDF==1.26.3
+segno==1.6.6
+spotipy==2.25.1
