@@ -1,9 +1,12 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import re
+from dotenv import load_dotenv
 import os
+# import json
 
-# Set your Spotify credentials here or use environment variables
+load_dotenv()  # loads .env from project root
+
 CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
 
@@ -51,6 +54,8 @@ def get_playlist_tracks(playlist_url):
             track = item["track"]
             if track is None:
                 continue
+
+            # print(json.dumps(track, indent=2))  # Debugging line to inspect track data
 
             title = clean_track_title(track["name"])
             artist = track["artists"][0]["name"]
